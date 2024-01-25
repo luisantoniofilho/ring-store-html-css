@@ -16,22 +16,22 @@ FONT SIZE SYSTEM (px)
 
 /* Instrument Serif */
 body {
-  color: #000;
+  color: #212529;
   font-family: "Playfair Display", serif;
 }
 
 .container {
-  width: 960px;
+  width: 1000px;
   margin: 10px auto;
 }
 
 /* NAVIGATION */
-.main-header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .brand-name {
@@ -55,13 +55,13 @@ a:active {
   font-weight: bold;
 }
 
-/* ARTICLE */
-h1 {
+/* SECTION */
+.main-title {
   color: #ba9e01;
   text-align: center;
   font-size: 60px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 }
 
 .main-box {
@@ -69,15 +69,13 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   gap: 10px;
 }
 
 .main-text {
-  color: #000;
   font-size: 36px;
   line-height: 1.5;
-  /* font-weight: bold; */
 }
 
 .main-ring-img {
@@ -99,6 +97,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  margin-bottom: 120px;
 }
 
 .feature-icon {
@@ -138,4 +137,58 @@ h1 {
   color: #000;
   font-size: 30px;
   line-height: 1.5;
+}
+
+.section-ring-img {
+  height: 400px;
+}
+
+a.btn-buy {
+  background-color: #ba9e01;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  grid-column: 1/3;
+  padding: 16px 32px;
+  border-radius: 10px;
+  margin: 0 380px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
+  margin-bottom: 100px;
+}
+
+.btn-buy:hover {
+  background-color: #fff;
+  color: #ba9e01;
+  border: 2px solid #ba9e01;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f1f3f5;
+  width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 30px;
+}
+
+.footer-item:link,
+.footer-item:visited {
+  text-decoration: ;
+}
+
+.footer-item:hover,
+.footer-item:active {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copyright-text {
+  font-size: 12px;
 }
