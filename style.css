@@ -46,27 +46,56 @@ body {
 }
 
 .container {
-  max-width: 100rem;
-  margin: 1rem auto;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* NAVIGATION */
+/* ********************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ********************** */
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12rem;
+  gap: 1.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.6rem;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ********************** */
+/* HEADER */
+/* ********************** */
+
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 1.6rem;
-  gap: 10rem;
-  margin-bottom: 12rem;
+  margin: 0 auto 12rem auto;
 }
 
-.brand-name {
-}
+/* ********************** */
+/* NAVIGATION */
+/* ********************** */
 
 nav {
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 4.8rem;
 }
 
 a:link,
@@ -81,16 +110,20 @@ a:active {
   font-weight: bold;
 }
 
-/* SECTION */
-.main-title {
+/* ********************** */
+/* HERO SECTION */
+/* ********************** */
+
+.hero-title {
+  max-width: 80rem;
   color: #ba9e01;
   text-align: center;
   font-size: 6rem;
   text-transform: uppercase;
-  margin-bottom: 12rem;
+  margin: 0 auto 10rem auto;
 }
 
-.main-box {
+.hero-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -99,30 +132,21 @@ a:active {
   gap: 1rem;
 }
 
-.main-text {
+.hero-text {
   font-size: 3.6rem;
   line-height: 1.5;
 }
 
-.main-ring-img {
+.hero-ring-img {
   height: 40rem;
   padding: 0;
 }
 
-.big-text {
-  text-align: center;
-  font-size: 2.6rem;
-}
-
+/* ********************** */
 /* FEATURES */
-.features {
-  margin-bottom: 4rem;
-}
+/* ********************** */
 
 .features-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
   margin-bottom: 12rem;
 }
 
@@ -141,38 +165,66 @@ a:active {
 .features-text {
   font-size: 1.8rem;
   line-height: 1.5;
-  letter-spacing: 1.5;
+  letter-spacing: 1.6;
   color: #212529;
 }
 
-.space {
-  margin-top: 50rem;
-}
-
+/* ********************** */
 /* CONTENT */
+/* ********************** */
+
 .content-box {
   align-items: center;
   justify-content: center;
-  margin-bottom: 20rem;
   text-align: center;
-}
-
-.text-img-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  margin-bottom: 12rem;
 }
 
 .content-text {
   color: #000;
+  text-align: left;
   font-size: 3rem;
   line-height: 1.5;
 }
 
 .section-ring-img {
   height: 40rem;
+}
+
+/* ********************** */
+/* RING GALLERY */
+/* ********************** */
+
+.ring-gallery-box {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 6rem;
+  color: #ba9e01;
+}
+
+.ring-imgs {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.gallery-ring-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ********************** */
+/* CTA SECTION */
+/* ********************** */
+
+.cta-section {
+  text-align: center;
+  margin-bottom: 12rem;
 }
 
 .btn-buy:link,
@@ -182,10 +234,12 @@ a:active {
   color: #fff;
   transition: all 0.5s;
   text-decoration: none;
-  font-weight: bold;
   font-size: 2.2rem;
+  font-weight: bold;
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
+
+  /* Inside border */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
 }
 
@@ -198,7 +252,10 @@ a:active {
   box-shadow: inset 0 0 0 2px #ba9e01;
 }
 
+/* ********************** */
 /* FOOTER */
+/* ********************** */
+
 footer {
   background-color: #f1f3f5;
   width: 100%;
