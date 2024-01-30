@@ -1,0 +1,122 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font size system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 
+/ 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLORS
+
+- Primary: #ba9e01
+- Tints: #f8f5e6
+- Shades:
+- Accents:
+- Greys:
+ #212529
+
+--- 05 SHADOWS
+
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
+
+--- 06 BORDER-RADIUS
+border-radius: 10px;
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 /
+64 / 80 / 96 / 128
+
+*/
+
+/* TRY CREATE SHADES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Instrument Serif */
+body {
+  color: #212529;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ********************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ********************** */
+
+/* ********************** */
+/* GRID */
+/* ********************** */
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12rem;
+  gap: 1.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.6rem;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ********************** */
+/* BUTTON */
+/* ********************** */
+
+.btn--general {
+  display: inline-block;
+  background-color: #ba9e01;
+  color: #fff;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
+}
+
+/* ********************** */
+/* NAVIGATION */
+/* ********************** */
+
+.nav--list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.nav--link:link,
+.nav--link:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav--link:hover,
+.nav--link:active {
+  text-decoration: underline;
+  font-weight: bold;
+}

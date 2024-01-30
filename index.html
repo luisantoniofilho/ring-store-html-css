@@ -11,32 +11,37 @@
       rel="stylesheet"
     />
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>StellarRings</title>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="main-header">
         <h2 class="brand-name">StellarRings</h2>
-        <nav>
-          <a class="nav" href="#">Releases</a>
-          <a class="nav" href="#">Best sellers</a>
-          <a class="nav" href="#">Men</a>
-          <a class="nav" href="#">Women</a>
+        <nav class="main-nav-list nav--list">
+          <a class="main-nav-link nav--link" href="#">Releases</a>
+          <a class="main-nav-link nav--link" href="#">Best sellers</a>
+          <a class="main-nav-link nav--link" href="#">Men</a>
+          <a class="main-nav-link nav--link" href="#">Women</a>
         </nav>
       </header>
 
       <section>
-        <div class="hero-section">
+        <div class="hero-section-box">
           <h1 class="hero-title">Transcendent style, exceptional rings</h1>
 
-          <div class="hero-box grid grid--2-cols">
+          <div class="hero-text-img-box grid grid--2-cols">
             <p class="hero-text">
               Discover the unique elegance of our rings. Each piece is carefully
               designed to reflect style and individuality.
             </p>
             <img class="hero-ring-img" src="images/ring03.jpeg" alt="ring" />
           </div>
+
+          <a class="meet-collection-btn btn--general" href="#"
+            >Meet our collection</a
+          >
         </div>
 
         <div class="features-box grid grid--3-cols">
@@ -57,8 +62,8 @@
             </svg>
             <h3 class="features-title">Exclusive Design</h3>
             <p class="features-text">
-              Carefully crafted rings with distinctive designs that stand out
-              for their originality.
+              Crafted with care for a distinctive, standout style. Unique rings
+              that redefine originality.
             </p>
           </div>
 
@@ -79,7 +84,7 @@
             </svg>
             <h3 class="features-title">Premium Quality Materials</h3>
             <p class="features-text">
-              Made with high-quality materials to ensure durability, shine, and
+              Luxury rings made durable with high-quality materials. Shine with
               lasting elegance.
             </p>
           </div>
@@ -101,8 +106,8 @@
             </svg>
             <h3 class="features-title">Touch of Sophistication</h3>
             <p class="features-text">
-              Each ring adds a touch of sophistication, instantly elevating any
-              look.
+              Elevate your look with rings adding instant sophistication.
+              Redefine your style effortlessly.
             </p>
           </div>
         </div>
@@ -164,18 +169,18 @@
         </div>
 
         <div class="cta-section">
-          <a class="btn-buy" href="#">Show more</a>
+          <a class="btn-buy btn--general" href="#">Buy</a>
         </div>
       </section>
     </div>
     <footer>
-      <div class="footer-nav">
-        <a class="footer-item" href="#">Social Media</a>
-        <a class="footer-item" href="#">Contact Us</a>
-        <a class="footer-item" href="#">FAQs</a>
-        <a class="footer-item" href="#">About Us</a>
+      <div class="footer-nav nav--list">
+        <a class="footer-item nav--link" href="#">Social Media</a>
+        <a class="footer-item nav--link" href="#">Contact Us</a>
+        <a class="footer-item nav--link" href="#">FAQs</a>
+        <a class="footer-item nav--link" href="#">About Us</a>
       </div>
-      <p class="copyright-text">Copyright &copy; By Luis Antonio</p>
+      <p class="footer-copyright-text">Copyright &copy; By Luis Antonio</p>
     </footer>
   </body>
 </html>
