@@ -11,39 +11,70 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="css/general.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <title>StellarRings</title>
   </head>
+
   <body>
-    <div class="container">
-      <header class="main-header">
-        <h2 class="brand-name">StellarRings</h2>
-        <nav class="main-nav-list nav--list">
-          <a class="main-nav-link nav--link" href="#">Releases</a>
-          <a class="main-nav-link nav--link" href="#">Best sellers</a>
-          <a class="main-nav-link nav--link" href="#">Men</a>
-          <a class="main-nav-link nav--link" href="#">Women</a>
-        </nav>
-      </header>
+    <header class="main-header">
+      <h2 class="brand-name">StellarRings</h2>
+      <nav class="main-nav-list nav--list">
+        <a class="main-nav-link nav--link" href="#">Releases</a>
+        <a class="main-nav-link nav--link" href="#">Best sellers</a>
+        <a class="main-nav-link nav--link" href="#">Men</a>
+        <a class="main-nav-link nav--link" href="#">Women</a>
+      </nav>
+    </header>
 
-      <section>
-        <div class="hero-section-box">
-          <h1 class="hero-title">Transcendent style, exceptional rings</h1>
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-section-box">
+            <h1 class="hero-title">Transcendent style, exceptional rings</h1>
 
-          <div class="hero-text-img-box grid grid--2-cols">
-            <p class="hero-text">
+            <img class="hero-img" src="images/ring14.jpg" />
+
+            <!-- <p class="hero-text">
+              Unleash the power of timeless elegance with StellarRings, where
+              exceptional craftsmanship meets transcendent style.
+            </p> -->
+
+            <a class="meet-collection-btn btn--general" href="#"
+              >Meet our collection</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-slogan">
+        <div class="container">
+          <h3 class="subheading">Exclusive</h3>
+          <div class="slogan-text-img-box grid grid--2-cols">
+            <p class="slogan-text">
               Discover the unique elegance of our rings. Each piece is carefully
               designed to reflect style and individuality.
             </p>
-            <img class="hero-ring-img" src="images/ring03.jpeg" alt="ring" />
+            <img class="slogan-ring-img" src="images/ring01.jpeg" alt="ring" />
+
+            <img class="slogan-ring-img" src="images/ring02.jpg" alt="ring" />
+            <p class="slogan-text">
+              From the classics. From timeless to modern designs, our collection
+              offers options for everyone the tastes.
+            </p>
           </div>
-
-          <a class="meet-collection-btn btn--general" href="#"
-            >Meet our collection</a
-          >
         </div>
+      </section>
 
+      <section class="section-features">
+        <h3 class="subheading">Features</h3>
         <div class="features-box grid grid--3-cols">
           <div class="feature01">
             <svg
@@ -62,8 +93,8 @@
             </svg>
             <h3 class="features-title">Exclusive Design</h3>
             <p class="features-text">
-              Crafted with care for a distinctive, standout style. Unique rings
-              that redefine originality.
+              Indulge in exclusivity with meticulously crafted rings, boasting
+              distinctive designs that captivate with unparalleled originality.
             </p>
           </div>
 
@@ -84,8 +115,8 @@
             </svg>
             <h3 class="features-title">Premium Quality Materials</h3>
             <p class="features-text">
-              Luxury rings made durable with high-quality materials. Shine with
-              lasting elegance.
+              Meticulously crafted from high-quality materials, our rings ensure
+              durability, radiant shine, and enduring elegance.
             </p>
           </div>
 
@@ -106,59 +137,53 @@
             </svg>
             <h3 class="features-title">Touch of Sophistication</h3>
             <p class="features-text">
-              Elevate your look with rings adding instant sophistication.
-              Redefine your style effortlessly.
+              Elevate your style with rings that seamlessly introduce a touch of
+              sophistication, instantly enhancing and refining any look.
             </p>
           </div>
         </div>
+      </section>
 
-        <div class="content-box grid grid--2-cols">
-          <img class="section-ring-img" src="images/ring02.jpg" alt="ring" />
-          <p class="content-text">
-            From the classics. From timeless to modern designs, our collection
-            offers options for everyone the tastes.
-          </p>
-        </div>
-
+      <section class="section-gallery">
         <div class="ring-gallery-box">
-          <h3 class="gallery-title">Rings gallery</h3>
-          <ul class="ring-imgs grid grid--3-cols">
-            <li>
+          <h3 class="gallery-title">Our products</h3>
+          <ul class="list-ring-imgs">
+            <li class="gallery-list-item">
               <img
                 class="gallery-ring-img"
                 src="images/rings-gallery/ring01.jpg"
                 alt="Ring image"
               />
             </li>
-            <li>
+            <li class="gallery-list-item">
               <img
                 class="gallery-ring-img"
                 src="images/rings-gallery/ring02.webp"
                 alt="Ring image"
               />
             </li>
-            <li>
+            <li class="gallery-list-item">
               <img
                 class="gallery-ring-img"
                 src="images/rings-gallery/ring03.webp"
                 alt="Ring image"
               />
             </li>
-            <li>
+            <li class="gallery-list-item">
               <img
                 class="gallery-ring-img"
                 src="images/rings-gallery/ring04.jpeg"
                 alt="Ring image"
               />
             </li>
-            <li>
+            <li class="gallery-list-item">
               <img
                 class="gallery-ring-img"
                 src="images/rings-gallery/ring05.jpeg"
                 alt="Ring image"
               />
             </li>
-            <li>
+            <li class="gallery-list-item">
               <img
                 class="gallery-ring-img"
                 src="images/rings-gallery/ring06.jpeg"
@@ -167,12 +192,12 @@
             </li>
           </ul>
         </div>
-
-        <div class="cta-section">
-          <a class="btn-buy btn--general" href="#">Buy</a>
-        </div>
       </section>
-    </div>
+
+      <section class="cta-section">
+        <a class="btn-buy btn--general" href="#">Buy</a>
+      </section>
+    </main>
     <footer>
       <div class="footer-nav nav--list">
         <a class="footer-item nav--link" href="#">Social Media</a>
