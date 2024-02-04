@@ -112,7 +112,7 @@
 .section-features {
   background-color: #f8f5e6;
   padding: 4.8rem 9.6rem;
-  margin-bottom: 12rem;
+  margin-bottom: 6.4rem;
 }
 
 .features-heading {
@@ -138,6 +138,110 @@
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: 1.6;
+}
+
+/* ********************** */
+/* BEST SELLERS SECTION */
+/* ********************** */
+
+.section-best-sellers {
+  margin-bottom: 12rem;
+}
+
+.section-best-sellers-title {
+  color: #ba9e01;
+  font-size: 6.4rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.best-seller-card:first-child {
+  background-image: linear-gradient(
+    to bottom right,
+    #a78e01,
+    #ba9e01,
+    #c1a81a,
+    #c8b134
+  );
+  box-shadow: 5px 5px 5px rgba(193, 168, 26, 0.29);
+}
+
+.best-seller-card {
+  background-color: #fefefd;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.164);
+}
+
+.best-seller-img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.best-seller-emphasis-ring-name {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  color: #f8f5e6;
+}
+
+.best-seller-ring-name {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  color: #000;
+}
+
+.best-seller-text-box {
+  padding: 2.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.best-sellers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.best-seller-list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.best-seller-emphasis-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #f8f5e6;
+}
+
+.best-seller-emphasis-text {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #f8f5e6;
+}
+
+.best-seller-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #000;
+}
+
+.best-seller-text {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #111;
+}
+
+.best-seller-cta-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.2rem 2.2rem 2.2rem;
 }
 
 /* ********************** */

@@ -13,6 +13,7 @@
 
 - Tints:
  #f8f5e6
+ #d6c567
 
 - Shades:
 #826F01
@@ -94,6 +95,16 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+/* ********************** */
+/* CARD */
+/* ********************** */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* padding: ; */
 }
 
 /* ********************** */
