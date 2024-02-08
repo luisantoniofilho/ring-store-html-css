@@ -47,7 +47,7 @@
 
 .hero-title {
   max-width: 80rem;
-  color: #ba9e01;
+  color: #a78e01;
   text-align: center;
   font-size: 6.4rem;
   text-transform: uppercase;
@@ -171,6 +171,11 @@
   width: 90%;
   border-radius: 10px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.164);
+  transition: all 0.5s;
+}
+
+.best-card:hover {
+  transform: translateY(-0.5rem);
 }
 
 .best-img {
@@ -225,6 +230,8 @@
   border-radius: 10px;
   font-size: 3.2rem;
   padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 .best-emphasis-btn-buy:hover,
@@ -274,6 +281,7 @@
 
 .best-tag-price {
   font-size: 3.2rem;
+  font-weight: 600;
 }
 
 .best-btn-buy {
@@ -283,6 +291,7 @@
   border-radius: 10px;
   font-size: 3.2rem;
   padding: 0.5rem 1.5rem;
+  text-decoration: none;
 }
 
 .best-btn-buy:hover,
@@ -313,14 +322,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1.6rem;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 6.4rem;
   list-style: none;
   margin-bottom: 0;
   justify-content: center;
 }
 
 .gallery-list-item {
-  width: 80%;
+  max-width: 40rem;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -342,16 +353,89 @@
 /* ********************** */
 
 .cta-section {
+  background-color: #f8f5e6;
   text-align: center;
-  margin-bottom: 12rem;
+  margin: 12rem 18rem 18rem 18rem;
+  padding: 4rem 0;
+  border-radius: 50px;
 }
 
-.btn-buy:link,
-.btn-buy:visited {
+.cta-box {
+  padding: 2rem;
 }
 
-.btn-buy:hover,
-.btn-buy:active {
+.cta-title {
+  font-size: 5.2rem;
+  color: #826f01;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text-img-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cta-content-box {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3.2rem;
+  grid-column: 1/2;
+}
+
+.cta-text-input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-content: start;
+}
+
+.cta-form label,
+.cta-form select,
+.cta-form input {
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  color: #4a3f00;
+  font-weight: bold;
+}
+
+.cta-form label {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.cta-form input {
+  font-size: 2.4rem;
+}
+
+.cta-form select {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.cta-ring-img {
+  width: 100%;
+  grid-column: 2/-1;
+}
+
+.btn-subscribe {
+  font-size: 3.2rem;
+  align-self: center;
+  border: none;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:active {
+  cursor: pointer;
   background-color: #f8f5e6;
   color: #ba9e01;
 
@@ -363,31 +447,82 @@
 /* FOOTER */
 /* ********************** */
 
-footer {
-  background-color: #f1f3f5;
-  width: 100%;
+.footer {
+  background-color: #eee;
+  padding: 12.8rem 10rem;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  align-items: flex-start;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 3.2rem;
+  color: #4a3f00;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 2.2rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
 }
 
 .footer-nav {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8rem;
-  padding: 3rem;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
-.footer-item:link,
-.footer-item:visited {
+.footer-link:link,
+.footer-link:visited {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  color: #767676;
+  transition: all 0.3s;
 }
 
-.footer-item:hover,
-.footer-item:active {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.footer-copyright-text {
-  font-size: 1rem;
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
