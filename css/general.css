@@ -17,6 +17,7 @@
 
 - Shades:
 #826F01
+#5d4f01
 
 - Accents:
 
@@ -90,7 +91,6 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
-  gap: 5.6rem;
 }
 
 .grid--4-cols {
