@@ -28,6 +28,13 @@
     margin-bottom: 8rem;
   }
 
+  .best-emphasis-tag-price,
+  .best-emphasis-btn-buy,
+  .best-tag-price,
+  .best-btn-buy {
+    font-size: 3rem;
+  }
+
   .gallery-title {
     margin-bottom: 2rem;
   }
@@ -44,9 +51,144 @@
 }
 
 /**************************/
-/* BELOW 1140px (Tablets) */
+/* BELOW 978px (Tablets) */
 /**************************/
 
+@media (max-width: 61em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .best-sellers-card {
+    gap: 4rem;
+  }
+
+  .best-emphasis-ring-name,
+  .best-ring-name {
+    font-size: 2.4rem;
+  }
+
+  .best-emphasis-text,
+  .best-text {
+    font-size: 1.4rem;
+  }
+
+  .best-emphasis-tag-price,
+  .best-emphasis-btn-buy,
+  .best-tag-price,
+  .best-btn-buy {
+    font-size: 2.4rem;
+  }
+
+  /* Mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    background-color: #f8f5e6;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    gap: 6.4rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .main-nav-list .main-nav-link {
+    font-size: 5.2rem;
+  }
+
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 727px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 45em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slogan-text {
+    font-size: 3rem;
+  }
+
+  .slogan-ring-img {
+    height: 30rem;
+  }
+
+  .section-features {
+    padding: 4.8rem 12.8rem;
+  }
+
+  .features-subheading {
+    font-size: 4.4rem;
+    text-align: center;
+  }
+
+  .features-box {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .features-text {
+    font-size: 2.4rem;
+  }
+
+  .best-sellers-card {
+    padding: 0 14rem;
+    gap: 6.4rem;
+  }
+
+  .best-emphasis-ring-name,
+  .best-ring-name {
+    font-size: 4rem;
+  }
+
+  .best-emphasis-text,
+  .best-text {
+    font-size: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
 /* - Font size system (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 
 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */

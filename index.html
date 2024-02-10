@@ -27,18 +27,24 @@
     <link href="css/general.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/queries.css" rel="stylesheet" />
+
+    <script defer src="js/script.js"></script>
     <title>StellarRings</title>
   </head>
 
   <body>
     <header class="main-header">
       <h2 class="brand-name">StellarRings</h2>
-      <nav class="main-nav-list nav--list">
-        <a class="main-nav-link nav--link" href="#features">Features</a>
-        <a class="main-nav-link nav--link" href="#best-sellers">Best sellers</a>
-        <a class="main-nav-link nav--link" href="#gallery">Collection</a>
-        <a class="main-nav-link nav--link" href="#cta">Subscribe</a>
+      <nav class="main-nav-list">
+        <a class="main-nav-link" href="#features">Features</a>
+        <a class="main-nav-link" href="#best-sellers">Best sellers</a>
+        <a class="main-nav-link" href="#gallery">Collection</a>
+        <a class="main-nav-link" href="#cta">Subscribe</a>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -93,7 +99,7 @@
       </section>
 
       <section class="section-features" id="features">
-        <h3 class="subheading">Features</h3>
+        <h3 class="features-subheading subheading">Features</h3>
         <div class="features-box grid grid--3-cols">
           <div class="feature01">
             <svg
@@ -165,8 +171,8 @@
 
       <section class="section-best-sellers container" id="best-sellers">
         <h3 class="section-best-sellers-title">Best sellers</h3>
-        <div class="best-sellers-card">
-          <div class="best-card card">
+        <div class="best-sellers-card grid grid--3-cols">
+          <div class="best-card">
             <img
               class="best-img"
               src="images/ring07-min.jpg"
@@ -211,7 +217,7 @@
             </div>
           </div>
 
-          <div class="best-card card">
+          <div class="best-card">
             <img
               class="best-img"
               src="images/ring08.webp"
@@ -250,7 +256,7 @@
             </div>
           </div>
 
-          <div class="best-card card">
+          <div class="best-card">
             <img
               class="best-img"
               src="images/ring15-min.jpg"
@@ -343,9 +349,7 @@
 
       <section class="section-cta container" id="cta">
         <div class="cta-box">
-          <h3 class="cta-title">
-            Change your life subscribing for our new collection!
-          </h3>
+          <h3 class="cta-title">Elevate your style: New Luxe Collection</h3>
           <div class="cta-text-img-box">
             <div class="cta-content-box">
               <form class="cta-form">
@@ -473,6 +477,7 @@
       </div>
     </footer>
 
+    <
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

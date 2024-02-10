@@ -98,16 +98,6 @@ body {
 }
 
 /* ********************** */
-/* CARD */
-/* ********************** */
-
-.card {
-  display: flex;
-  flex-direction: column;
-  /* padding: ; */
-}
-
-/* ********************** */
 /* BUTTON */
 /* ********************** */
 
@@ -122,26 +112,4 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
-}
-
-/* ********************** */
-/* NAVIGATION */
-/* ********************** */
-
-.nav--list {
-  display: flex;
-  align-items: center;
-  gap: 4.8rem;
-}
-
-.nav--link:link,
-.nav--link:visited {
-  color: #000;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.nav--link:hover,
-.nav--link:active {
-  border-bottom: 1px solid #000;
 }
