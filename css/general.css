@@ -48,7 +48,15 @@ border-radius: 10px;
 html {
   font-size: 62.5%;
 }
-/* "Playfair Display" */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 body {
   color: #444;
   font-family: "Crimson Text", serif;

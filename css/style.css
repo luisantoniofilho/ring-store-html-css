@@ -89,12 +89,6 @@
   width: 50%;
 }
 
-/* .hero-text {
-  color: #555;
-  font-size: 3.2rem;
-  text-align: center;
-} */
-
 .meet-collection-btn:link,
 .meet-collection-btn:visited {
   text-transform: uppercase;
@@ -110,7 +104,7 @@
 }
 
 /* ********************** */
-/* SLOGAN SECTION*/
+/* SLOGAN SECTION */
 /* ********************** */
 
 .section-slogan {
@@ -209,7 +203,7 @@
   flex-direction: column;
   background-color: #fefefd;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.164);
   transition: all 0.5s;
 }
@@ -220,8 +214,8 @@
 
 .best-img {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 /* Enfasis card */
@@ -416,13 +410,6 @@
   padding: 0 1rem;
 }
 
-.cta-text-img-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-}
-
 .cta-content-box {
   display: flex;
   align-self: center;
@@ -454,18 +441,18 @@
   font-weight: bold;
 }
 
-.cta-form label {
+.cta-form label,
+.cta-form input,
+.cta-form select {
   font-size: 1.8rem;
+}
+
+.cta-form label {
   text-align: left;
   margin-bottom: 0.5rem;
 }
 
-.cta-form input {
-  font-size: 1.8rem;
-}
-
 .cta-form select {
-  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
