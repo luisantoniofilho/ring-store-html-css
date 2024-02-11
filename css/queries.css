@@ -89,6 +89,7 @@
   }
 
   .main-nav-list {
+    z-index: 999;
     flex-direction: column;
     background-color: #f8f5e6;
     -webkit-backdrop-filter: blur(5px);
@@ -220,6 +221,11 @@
     grid-template-columns: 1fr;
   }
 
+  /* HERO SECTION */
+  .section-hero {
+    margin-bottom: 3.2rem;
+  }
+
   /* SLOGAN SECTION */
   .slogan-ring-img.inverted {
     grid-row: 4/-1;
@@ -238,6 +244,13 @@
   /* BEST SELLERS SECTION */
   .best-sellers-card {
     padding: 3.6rem;
+  }
+
+  .best-emphasis-tag-price,
+  .best-emphasis-btn-buy,
+  .best-tag-price,
+  .best-btn-buy {
+    font-size: 4.4rem;
   }
 
   /* RING GALLERY SECTION */

@@ -9,7 +9,7 @@
   height: 9.6rem;
   padding: 1rem 4.8rem;
   font-size: 1.6rem;
-  margin: 0 auto 6.4rem auto;
+  margin: 0 auto 5.2rem auto;
   color: #4a3f00;
 }
 
@@ -66,7 +66,7 @@
 /* ********************** */
 
 .section-hero {
-  margin-bottom: 7.4rem;
+  /* margin-bottom: 0.2rem; */
 }
 
 .hero-section-box {
@@ -74,7 +74,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
 }
 
 .hero-title {
@@ -111,14 +110,18 @@
   margin-bottom: 7.4rem;
 }
 
-.section-slogan .subheading {
-  margin-bottom: 0;
-}
-
 .slogan-text-img-box {
   display: grid;
-  margin-bottom: 0;
+  position: relative;
   gap: 1rem;
+}
+
+.slogan-heading {
+  position: absolute;
+  top: 4.8rem;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .slogan-text {
@@ -345,6 +348,10 @@
 }
 
 .ring-gallery-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-title {

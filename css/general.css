@@ -121,3 +121,14 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
 }
+
+/* ********************** */
+/* ICONS */
+/* ********************** */
+
+/* DOWN ARROW */
+.down-arrow {
+  color: #ba9e01;
+  height: 32px;
+  width: 32px;
+}
