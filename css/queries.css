@@ -38,16 +38,6 @@
   .gallery-title {
     margin-bottom: 2rem;
   }
-
-  .cta-title {
-    font-size: 3.2rem;
-  }
-
-  .cta-form label,
-  .cta-form select,
-  .cta-form input {
-    font-size: 1.8rem;
-  }
 }
 
 /**************************/
@@ -58,28 +48,6 @@
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
-  }
-
-  /* BEST SELLERS SECTION */
-  .best-sellers-card {
-    gap: 4rem;
-  }
-
-  .best-emphasis-ring-name,
-  .best-ring-name {
-    font-size: 2.4rem;
-  }
-
-  .best-emphasis-text,
-  .best-text {
-    font-size: 1.4rem;
-  }
-
-  .best-emphasis-tag-price,
-  .best-emphasis-btn-buy,
-  .best-tag-price,
-  .best-btn-buy {
-    font-size: 3.2rem;
   }
 
   /* Mobile navigation */
@@ -133,6 +101,48 @@
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
+
+  /* BEST SELLERS SECTION */
+  .best-sellers-card {
+    gap: 4rem;
+  }
+
+  .best-emphasis-ring-name,
+  .best-ring-name {
+    font-size: 2.4rem;
+  }
+
+  .best-emphasis-text,
+  .best-text {
+    font-size: 1.4rem;
+  }
+
+  .best-emphasis-tag-price,
+  .best-emphasis-btn-buy,
+  .best-tag-price,
+  .best-btn-buy {
+    font-size: 3.2rem;
+  }
+
+  /* CTA SECTION */
+  .cta-text-img-box {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    padding: 1.2rem 6.4rem;
+  }
+
+  .cta-title {
+    font-size: 3.4rem;
+  }
+
+  .btn-subscribe {
+    font-size: 2.4rem;
+    padding: 2.4rem 1.6rem;
+    margin-top: 2rem;
+  }
 }
 
 /**************************/
@@ -182,22 +192,46 @@
   /* BEST SELLERS SECTION */
   .best-sellers-card {
     padding: 0 14rem;
-    gap: 6.4rem;
+    gap: 4.8rem;
   }
 
   .best-emphasis-ring-name,
   .best-ring-name {
-    font-size: 4rem;
+    font-size: 4.4rem;
   }
 
   .best-emphasis-text,
   .best-text {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
 
   /* RING GALLERY SECTION */
   .list-ring-imgs {
     margin: 0 6.4rem;
+  }
+
+  /* CTA SECTION */
+  .cta-text-img-box {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form {
+    padding: 2.4rem 4.8rem;
+  }
+
+  .cta-title {
+    font-size: 4.8rem;
+  }
+
+  .cta-form label,
+  .cta-form input,
+  .cta-form select,
+  .btn-subscribe {
+    font-size: 4rem;
+  }
+
+  .cta-ring-img {
+    display: none;
   }
 }
 
@@ -250,7 +284,7 @@
   .best-emphasis-btn-buy,
   .best-tag-price,
   .best-btn-buy {
-    font-size: 4.4rem;
+    font-size: 5.8rem;
   }
 
   /* RING GALLERY SECTION */
@@ -268,21 +302,20 @@
     margin-bottom: 2rem;
   }
 
+  .cta-form {
+    padding: 2.4rem 3.2rem;
+  }
+
   .cta-form label,
   .cta-form input,
   .cta-form select {
-    font-size: 2.4rem;
-  }
-
-  .cta-ring-img {
-    padding: 0 4.8rem;
-    grid-column: 1/-1;
-    grid-row: 2/3;
+    font-size: 3.2rem;
   }
 
   /* FOOTER */
   .grid--footer {
     grid-template-columns: repeat(6, 1fr);
+    row-gap: 3.6rem;
   }
 
   .nav-col {
