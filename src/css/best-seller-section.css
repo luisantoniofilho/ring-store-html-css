@@ -1,0 +1,169 @@
+/* ********************** */
+/* BEST SELLERS SECTION */
+/* ********************** */
+
+.section-best-sellers {
+  margin-bottom: 12rem;
+}
+
+.section-best-sellers-title {
+  color: #ba9e01;
+  font-size: 6.4rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.best-sellers-card {
+  gap: 6.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.best-card:first-child {
+  background-image: linear-gradient(
+    to bottom right,
+    #a78e01,
+    #ba9e01,
+    #c1a81a,
+    #c8b134
+  );
+  box-shadow: 5px 5px 5px rgba(193, 168, 26, 0.29);
+}
+
+.best-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefd;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.164);
+  transition: all 0.5s;
+}
+
+.best-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.best-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Enfasis card */
+.best-emphasis-ring-name {
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: #f8f5e6;
+}
+
+.best-card:first-child .best-sellers-list {
+  font-weight: 600;
+}
+
+.best-emphasis-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #f8f5e6;
+}
+
+.best-emphasis-text {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #f8f5e6;
+}
+
+.best-emphasis-tag-price {
+  color: #f8f5e6;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.best-btn-buy.best-emphasis-btn-buy {
+  background-color: #fff;
+  color: #ba9e01;
+  border: 1px solid #ba9e01;
+  border-radius: 10px;
+  font-size: 3.2rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.best-emphasis-btn-buy:hover,
+.best-emphasis-btn-buy:active {
+  cursor: pointer;
+  background-color: #f1eccc;
+  transition: all 0.3s;
+}
+
+/* Normal cards */
+.best-text-box {
+  padding: 2.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.best-sellers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.best-list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.best-ring-name {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: #000;
+}
+
+.best-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #000;
+}
+
+.best-text {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #111;
+}
+
+.best-cta-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.2rem 2.2rem 2.2rem;
+}
+
+.best-tag-price {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.best-btn-buy {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 10px;
+  font-size: 3.2rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+.best-btn-buy:hover,
+.best-btn-buy:active {
+  cursor: pointer;
+  background-color: #eee;
+  transition: all 0.3s;
+}

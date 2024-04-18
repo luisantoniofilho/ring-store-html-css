@@ -1,0 +1,40 @@
+/* ********************** */
+/* HERO SECTION */
+/* ********************** */
+
+.section-hero {
+  /* margin-bottom: 0.2rem; */
+}
+
+.hero-section-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  max-width: 80rem;
+  color: #a78e01;
+  text-align: center;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.meet-collection-btn:link,
+.meet-collection-btn:visited {
+  text-transform: uppercase;
+}
+
+.meet-collection-btn:hover,
+.meet-collection-btn:active {
+  background-color: #f8f5e6;
+  color: #ba9e01;
+
+  /* Inside border */
+  box-shadow: inset 0 0 0 2px #ba9e01;
+}
