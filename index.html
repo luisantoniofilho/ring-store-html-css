@@ -41,13 +41,10 @@
         <a class="main-nav-link" href="#cta">Subscribe</a>
       </nav>
       <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav open-menu-btn" name="menu"></ion-icon>
         <ion-icon
-          class="icon-mobile-nav open-menu-btn"
-          name="menu-outline"
-        ></ion-icon>
-        <ion-icon
-          class="icon-mobile-nav close-menu-btn"
-          name="close-outline"
+          class="icon-mobile-nav close-menu-btn hidden"
+          name="close"
         ></ion-icon>
       </button>
     </header>
@@ -75,7 +72,7 @@
             <p>
               <ion-icon
                 class="hero-arrow down-arrow"
-                name="chevron-down-outline"
+                name="chevron-down"
               ></ion-icon>
             </p>
           </div>
@@ -194,30 +191,24 @@
               <p class="best-emphasis-ring-name">Golden Radiance</p>
               <ul class="best-sellers-list">
                 <li class="best-list-item">
-                  <ion-icon
-                    class="best-emphasis-icon"
-                    name="medal-outline"
-                  ></ion-icon>
+                  <ion-icon class="best-emphasis-icon" name="medal"></ion-icon>
                   <span class="best-emphasis-text">24k Gold</span>
                 </li>
                 <li class="best-list-item">
                   <ion-icon
                     class="best-emphasis-icon"
-                    name="shield-checkmark-outline"
+                    name="checkmark-circle"
                   ></ion-icon>
                   <span class="best-emphasis-text">Scratch resistance</span>
                 </li>
                 <li class="best-list-item">
-                  <ion-icon
-                    class="best-emphasis-icon"
-                    name="leaf-outline"
-                  ></ion-icon>
+                  <ion-icon class="best-emphasis-icon" name="leaf"></ion-icon>
                   <span class="best-emphasis-text">Eco material</span>
                 </li>
                 <li class="best-list-item">
                   <ion-icon
                     class="best-emphasis-icon"
-                    name="infinite-outline"
+                    name="infinite"
                   ></ion-icon>
                   <span class="best-emphasis-text">Timeless Design</span>
                 </li>
@@ -241,25 +232,19 @@
               <p class="best-ring-name">Silver-Gold Gleam</p>
               <ul class="best-sellers-list">
                 <li class="best-list-item">
-                  <ion-icon class="best-icon" name="medal-outline"></ion-icon>
+                  <ion-icon class="best-icon" name="medal"></ion-icon>
                   <span class="best-text">18k Gold</span>
                 </li>
                 <li class="best-list-item">
-                  <ion-icon
-                    class="best-icon"
-                    name="close-circle-outline"
-                  ></ion-icon>
+                  <ion-icon class="best-icon" name="close-circle"></ion-icon>
                   <span class="best-text">Scratch resistance</span>
                 </li>
                 <li class="best-list-item">
-                  <ion-icon class="best-icon" name="leaf-outline"></ion-icon>
+                  <ion-icon class="best-icon" name="leaf"></ion-icon>
                   <span class="best-text">Eco material</span>
                 </li>
                 <li class="best-list-item">
-                  <ion-icon
-                    class="best-icon"
-                    name="infinite-outline"
-                  ></ion-icon>
+                  <ion-icon class="best-icon" name="infinite"></ion-icon>
                   <span class="best-text">Timeless Design</span>
                 </li>
               </ul>
@@ -280,25 +265,22 @@
               <p class="best-ring-name">Diamond Glow</p>
               <ul class="best-sellers-list">
                 <li class="best-list-item">
-                  <ion-icon class="best-icon" name="medal-outline"></ion-icon>
+                  <ion-icon class="best-icon" name="medal"></ion-icon>
                   <span class="best-text">18k Gold and diamond</span>
                 </li>
                 <li class="best-list-item">
                   <ion-icon
                     class="best-icon"
-                    name="shield-checkmark-outline"
+                    name="checkmark-circle"
                   ></ion-icon>
                   <span class="best-text">Scratch resistance</span>
                 </li>
                 <li class="best-list-item">
-                  <ion-icon class="best-icon" name="leaf-outline"></ion-icon>
+                  <ion-icon class="best-icon" name="leaf"></ion-icon>
                   <span class="best-text">Eco material</span>
                 </li>
                 <li class="best-list-item">
-                  <ion-icon
-                    class="best-icon"
-                    name="infinite-outline"
-                  ></ion-icon>
+                  <ion-icon class="best-icon" name="infinite"></ion-icon>
                   <span class="best-text">Timeless Design</span>
                 </li>
               </ul>
@@ -361,7 +343,7 @@
           <p>
             <ion-icon
               class="gallery-arrow down-arrow"
-              name="chevron-down-outline"
+              name="chevron-down"
             ></ion-icon>
           </p>
         </div>
@@ -422,9 +404,11 @@
           </div>
         </div>
         <div class="modal hidden">
-          <ion-icon class="modal-icon" name="checkbox-outline"></ion-icon>
-          <span class="modal-text">The data was sended!</span>
+          <button class="btn-close-modal">&times;</button>
+          <h2 class="modal-title">StellarRings</h2>
+          <p class="modal-text">&check; Subscribe complete!</p>
         </div>
+        <div class="overlay hidden"></div>
       </section>
     </main>
 
@@ -502,13 +486,6 @@
       </div>
     </footer>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
