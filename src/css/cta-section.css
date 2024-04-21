@@ -6,6 +6,10 @@
   margin-bottom: 12rem;
 }
 
+.cta-box {
+  margin-top: 3.6rem;
+}
+
 .cta-text-img-box {
   display: grid;
   grid-template-columns: 3.5fr 1.5fr;
@@ -38,7 +42,7 @@
   text-align: left;
 }
 
-.cta-title {
+.cta-subtitle {
   display: inline-block;
   text-align: left;
   font-size: 4.8rem;
@@ -66,9 +70,6 @@
 
 .cta-form label {
   text-align: left;
-}
-
-.cta-form select {
 }
 
 .cta-ring-img {

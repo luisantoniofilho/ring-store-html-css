@@ -6,48 +6,88 @@
   margin-bottom: 12rem;
 }
 
-.ring-gallery-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery-title {
-  text-align: center;
-  font-size: 6rem;
-  margin-bottom: 6rem;
-  color: #ba9e01;
-}
-
-.list-ring-imgs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin: 0 10rem 4rem 10rem;
-  padding: 1.6rem;
-  gap: 2rem;
-  list-style: none;
-  margin-bottom: 0;
-  justify-content: center;
-}
-
-.gallery-list-item {
-  max-width: 40rem;
-  margin: 0 auto;
-  overflow: hidden;
-  /* border-radius: 2px; */
-}
-
 .gallery-ring-img {
-  display: block;
-  width: 100%;
-
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.241);
-  transition: all 0.3s;
+  object-fit: cover;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
 }
 
-.gallery-ring-img:hover {
-  transform: scale(1.1);
+/* SLIDER */
+.slider {
+  position: relative;
+  max-width: 50rem;
+  height: 50rem;
+  margin: 0 auto;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: none;
+  font-family: inherit;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: -90%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: -90%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  background-color: #888;
+  opacity: 1;
 }
