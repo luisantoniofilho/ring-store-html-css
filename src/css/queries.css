@@ -12,6 +12,16 @@
   .list-ring-imgs {
     margin: 0 10rem;
   }
+
+  .slider__btn--left {
+    left: 0vw;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider__btn--right {
+    right: 0vw;
+    transform: translate(50%, -50%);
+  }
 }
 
 /**************************/
@@ -311,6 +321,11 @@
   .cta-form input,
   .cta-form select {
     font-size: 3.2rem;
+  }
+
+  .modal {
+    width: 70%;
+    /* height: 50%; */
   }
 
   /* FOOTER */

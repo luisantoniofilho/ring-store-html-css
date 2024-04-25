@@ -3,17 +3,28 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
+////////////////////////////////////////////
 // Selecting elements
+
+// Navigation
 const navLinks = document.querySelector('.main-nav-list');
 const mobileNavLinks = document.querySelectorAll('.main-nav-link');
 const openMenuBtn = document.querySelector('.open-menu-btn');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
 const meetCollectionBtn = document.querySelector('.meet-collection-btn');
+
+// Best sellers section
+const buyBtn = document.querySelectorAll('.best-btn-buy');
+
+// Gallery section
+const sliderEl = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
+const images = sliderEl.querySelectorAll('.gallery-ring-img');
 const btnLeft = document.querySelector('.slider__btn--left');
 const btnRight = document.querySelector('.slider__btn--right');
 const dotContainer = document.querySelector('.dots');
-const buyBtn = document.querySelectorAll('.best-btn-buy');
+
+// CTA section
 const ctaSection = document.querySelector('.section-cta');
 const ctaForm = document.querySelector('.cta-form');
 const modalWindow = document.querySelector('.modal');
@@ -69,23 +80,34 @@ mobileNavLinks.forEach(function (link) {
 });
 
 ////////////////////////////////////////////
-// Modal Window
+// Form/Modal Window
+
+// Clear form fields
+function clearForm() {
+  ctaForm.querySelector('#full-name').value = '';
+  ctaForm.querySelector('#email').value = '';
+  ctaForm.querySelector('#select-where').selectedIndex = 0; // Reinicia a seleção do dropdown
+}
+
 const openCloseModal = function () {
   modalWindow.classList.toggle('hidden');
-  // closeModalBtn.classList.toggle('hidden');
   overlay.classList.toggle('hidden');
 };
 
-ctaForm.addEventListener('submit', function (e) {
-  e.preventDefault();
-  openCloseModal();
+document.addEventListener('keydown', function (e) {
+  if (!modalWindow.classList.contains('hidden'))
+    if (e.key === 'Escape') openCloseModal();
 });
 
 closeModalBtn.addEventListener('click', function () {
   openCloseModal();
 });
 
-// Clear form fields
+ctaForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  openCloseModal();
+  clearForm();
+});
 
 ///////////////////////////////////////
 // Slider
@@ -119,6 +141,12 @@ const slider = function () {
     );
   };
 
+  const increaseSizeCurSlide = function (curSlide) {
+    images.forEach(img => img.classList.remove('current'));
+    const slide = document.querySelector(`.slide--${curSlide + 1}`);
+    slide.querySelector('.gallery-ring-img').classList.add('current');
+  };
+
   // Next slide
   const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
@@ -127,8 +155,7 @@ const slider = function () {
       curSlide++;
     }
 
-    goToSlide(curSlide);
-    activateDot(curSlide);
+    updateSlide(curSlide);
   };
 
   const prevSlide = function () {
@@ -137,8 +164,14 @@ const slider = function () {
     } else {
       curSlide--;
     }
-    goToSlide(curSlide);
-    activateDot(curSlide);
+
+    updateSlide(curSlide);
+  };
+
+  const updateSlide = function (slideNum) {
+    goToSlide(slideNum);
+    activateDot(slideNum);
+    increaseSizeCurSlide(slideNum);
   };
 
   const init = function () {
@@ -146,6 +179,7 @@ const slider = function () {
     createDots();
 
     activateDot(2);
+    increaseSizeCurSlide(2);
   };
   init();
 
@@ -161,8 +195,19 @@ const slider = function () {
   dotContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('dots__dot')) {
       const { slide } = e.target.dataset;
-      goToSlide(slide);
-      activateDot(slide);
+      goToSlide(+slide);
+      activateDot(+slide);
+      increaseSizeCurSlide(+slide);
+      curSlide = +slide;
+    }
+  });
+
+  sliderEl.addEventListener('click', function (e) {
+    if (e.target.classList.contains('gallery-ring-img')) {
+      const slideEl = e.target;
+      const slideValue = +slideEl.closest('.slide').classList[1].slice(7) - 1;
+      curSlide = slideValue;
+      updateSlide(slideValue);
     }
   });
 };
