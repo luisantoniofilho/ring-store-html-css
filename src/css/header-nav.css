@@ -2,7 +2,7 @@
 /* HEADER */
 /* ********************** */
 
-.main-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   color: #4a3f00;
 }
 
-.brand-name {
+.header__brand-name {
   display: inline-block;
   font-size: 3.2rem;
 }
@@ -22,14 +22,14 @@
 /* NAVIGATION */
 /* ********************** */
 
-.main-nav-list {
+.header__nav-list {
   display: flex;
   align-items: center;
   gap: 4.8rem;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.header__nav-link,
+.header__nav-link:visited {
   color: inherit;
   font-size: 2rem;
   color: #000;
@@ -37,13 +37,13 @@
   transition: all 0.3s;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
+.header__nav-link:hover,
+.header__nav-link:active {
   border-bottom: 1px solid #000;
 }
 
 /* Mobile navigation */
-.btn-mobile-nav {
+.header__btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
@@ -51,7 +51,7 @@
   display: none;
 }
 
-.icon-mobile-nav {
+.header__icon--mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
   color: #333;

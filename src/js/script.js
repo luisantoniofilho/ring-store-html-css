@@ -7,26 +7,24 @@ import 'regenerator-runtime/runtime';
 // Selecting elements
 
 // Navigation
-const navLinks = document.querySelector('.main-nav-list');
-const mobileNavLinks = document.querySelectorAll('.main-nav-link');
-const openMenuBtn = document.querySelector('.open-menu-btn');
+const header = document.querySelector('.header');
+const navLinks = document.querySelector('.header__nav-list');
+const mobileNavLinks = document.querySelectorAll('.header__nav-link');
+const openMenuBtn = document.querySelector('.header__btn-mobile-nav');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
-const meetCollectionBtn = document.querySelector('.meet-collection-btn');
-
-// Best sellers section
-const buyBtn = document.querySelectorAll('.best-btn-buy');
+const buyBtn = document.querySelectorAll('.btn-buy');
 
 // Gallery section
 const sliderEl = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
-const images = sliderEl.querySelectorAll('.gallery-ring-img');
+const images = sliderEl.querySelectorAll('.gallery__ring-img');
 const btnLeft = document.querySelector('.slider__btn--left');
 const btnRight = document.querySelector('.slider__btn--right');
 const dotContainer = document.querySelector('.dots');
 
 // CTA section
 const ctaSection = document.querySelector('.section-cta');
-const ctaForm = document.querySelector('.cta-form');
+const ctaForm = document.querySelector('.cta__form');
 const modalWindow = document.querySelector('.modal');
 const closeModalBtn = document.querySelector('.btn-close-modal');
 const overlay = document.querySelector('.overlay');
@@ -36,7 +34,7 @@ const overlay = document.querySelector('.overlay');
 navLinks.addEventListener('click', e => {
   e.preventDefault();
 
-  if (e.target.classList.contains('main-nav-link')) {
+  if (e.target.classList.contains('header__nav-link')) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
@@ -45,11 +43,6 @@ navLinks.addEventListener('click', e => {
 const goToCtaSection = function () {
   ctaSection.scrollIntoView({ behavior: 'smooth' });
 };
-
-meetCollectionBtn.addEventListener('click', e => {
-  e.preventDefault();
-  goToCtaSection();
-});
 
 buyBtn.forEach(btn =>
   btn.addEventListener('click', e => {
@@ -63,7 +56,7 @@ buyBtn.forEach(btn =>
 
 // Activate mobile menu
 function toggleMenu() {
-  document.querySelector('.main-header').classList.toggle('nav-open');
+  header.classList.toggle('nav-open');
   openMenuBtn.classList.toggle('hidden');
   closeMenuBtn.classList.toggle('hidden');
 }
@@ -144,7 +137,7 @@ const slider = function () {
   const increaseSizeCurSlide = function (curSlide) {
     images.forEach(img => img.classList.remove('current'));
     const slide = document.querySelector(`.slide--${curSlide + 1}`);
-    slide.querySelector('.gallery-ring-img').classList.add('current');
+    slide.querySelector('.gallery__ring-img').classList.add('current');
   };
 
   // Next slide
@@ -203,7 +196,7 @@ const slider = function () {
   });
 
   sliderEl.addEventListener('click', function (e) {
-    if (e.target.classList.contains('gallery-ring-img')) {
+    if (e.target.classList.contains('gallery__ring-img')) {
       const slideEl = e.target;
       const slideValue = +slideEl.closest('.slide').classList[1].slice(7) - 1;
       curSlide = slideValue;
@@ -212,3 +205,5 @@ const slider = function () {
   });
 };
 slider();
+
+console.log('h2');

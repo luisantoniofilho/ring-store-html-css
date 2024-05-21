@@ -2,18 +2,14 @@
 /* HERO SECTION */
 /* ********************** */
 
-.section-hero {
-  /* margin-bottom: 0.2rem; */
-}
-
-.hero-section-box {
+.hero__box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hero-title {
+.hero__title {
   max-width: 80rem;
   color: #a78e01;
   text-align: center;
@@ -21,17 +17,17 @@
   text-transform: uppercase;
 }
 
-.hero-img {
+.hero__img {
   width: 50%;
 }
 
-.meet-collection-btn:link,
-.meet-collection-btn:visited {
+.hero__btn:link,
+.hero__btn:visited {
   text-transform: uppercase;
 }
 
-.meet-collection-btn:hover,
-.meet-collection-btn:active {
+.hero__btn:hover,
+.hero__btn:active {
   background-color: #f8f5e6;
   color: #ba9e01;
 

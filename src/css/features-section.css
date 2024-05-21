@@ -8,26 +8,26 @@
   margin-bottom: 6.4rem;
 }
 
-.features-heading {
+.features__heading {
   color: #826f01;
 }
 
-.features-box {
+.features__box {
 }
 
-.feature-icon {
+.features__icon {
   height: 3rem;
   width: 3rem;
   color: #ba9e01;
   margin-bottom: 1.6rem;
 }
 
-.features-title {
+.features__title {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
 }
 
-.features-text {
+.features__text {
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: 1.6;

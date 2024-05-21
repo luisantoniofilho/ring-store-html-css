@@ -14,12 +14,12 @@
   gap: 2rem;
 }
 
-.logo-col {
+.footer__logo-col {
   display: flex;
   flex-direction: column;
 }
 
-.footer-logo {
+.footer__logo {
   display: block;
   font-size: 3.2rem;
   font-weight: bold;
@@ -28,14 +28,14 @@
   color: #4a3f00;
 }
 
-.social-links {
+.footer__social-links {
   list-style: none;
   display: flex;
   gap: 2.4rem;
   margin-bottom: 2.2rem;
 }
 
-.social-icon {
+.footer__social-icon {
   height: 2.4rem;
   width: 2.4rem;
 }
@@ -47,38 +47,38 @@
   margin-top: auto;
 }
 
-.footer-heading {
+.footer__heading {
   font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 4rem;
 }
 
-.contacts {
+.footer__contacts {
   font-style: normal;
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
-.address {
+.footer__address {
   margin-bottom: 2.4rem;
 }
 
-.footer-nav {
+.footer__links {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
 
-.footer-link:link,
-.footer-link:visited {
+.footer__link:link,
+.footer__link:visited {
   text-decoration: none;
   font-size: 2rem;
   color: #767676;
   transition: all 0.3s;
 }
 
-.footer-link:hover,
-.footer-link:active {
+.footer__link:hover,
+.footer__link:active {
   color: #555;
 }
