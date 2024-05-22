@@ -1,8 +1,5 @@
 'use strict';
 
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
-
 ////////////////////////////////////////////
 // Selecting elements
 
@@ -24,7 +21,7 @@ const dotContainer = document.querySelector('.dots');
 
 // CTA section
 const ctaSection = document.querySelector('.section-cta');
-const ctaForm = document.querySelector('.cta__form');
+const form = document.querySelector('.form');
 const modalWindow = document.querySelector('.modal');
 const closeModalBtn = document.querySelector('.btn-close-modal');
 const overlay = document.querySelector('.overlay');
@@ -77,9 +74,9 @@ mobileNavLinks.forEach(function (link) {
 
 // Clear form fields
 function clearForm() {
-  ctaForm.querySelector('#full-name').value = '';
-  ctaForm.querySelector('#email').value = '';
-  ctaForm.querySelector('#select-where').selectedIndex = 0; // Reinicia a seleção do dropdown
+  form.querySelector('#full-name').value = '';
+  form.querySelector('#email').value = '';
+  form.querySelector('#select-where').selectedIndex = 0; // Reinicia a seleção do dropdown
 }
 
 const openCloseModal = function () {
@@ -96,7 +93,7 @@ closeModalBtn.addEventListener('click', function () {
   openCloseModal();
 });
 
-ctaForm.addEventListener('submit', function (e) {
+form.addEventListener('submit', function (e) {
   e.preventDefault();
   openCloseModal();
   clearForm();

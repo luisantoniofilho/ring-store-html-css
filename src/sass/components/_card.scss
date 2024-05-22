@@ -1,0 +1,144 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefd;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.164);
+  transition: all 0.5s;
+
+  &--highlighted {
+    background-image: linear-gradient(
+      to bottom right,
+      #a78e01,
+      #ba9e01,
+      #c1a81a,
+      #c8b134
+    );
+    box-shadow: 5px 5px 5px rgba(193, 168, 26, 0.29);
+  }
+
+  &__img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+
+  /* Enfasis card */
+  &__heading--highlighted {
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    color: #f8f5e6;
+  }
+
+  &__icon--highlighted {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #f8f5e6;
+  }
+
+  &__text--highlighted {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #f8f5e6;
+  }
+
+  &__price--highlighted {
+    color: #f8f5e6;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  &__btn-buy--highlighted {
+    background-color: #fff;
+    color: #ba9e01;
+    border: 1px solid #ba9e01;
+    border-radius: 10px;
+    font-size: 3.2rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &__btn-buy--highlighted:hover,
+  &__btn-buy--highlighted:active {
+    cursor: pointer;
+    background-color: #f1eccc;
+    transition: all 0.3s;
+  }
+
+  /* Normal cards */
+  &__box {
+    padding: 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    color: #000;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #000;
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #111;
+  }
+
+  &__cta-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.2rem 2.2rem 2.2rem;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  &__btn-buy {
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+    border-radius: 10px;
+    font-size: 3.2rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+  }
+
+  &__btn-buy:hover,
+  &__btn-buy:active {
+    cursor: pointer;
+    background-color: #eee;
+    transition: all 0.3s;
+  }
+}

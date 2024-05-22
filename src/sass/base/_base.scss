@@ -1,0 +1,49 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font size system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 
+/ 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.241);
+
+--- 06 BORDER-RADIUS
+border-radius: 10px;
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 /
+64 / 80 / 96 / 128
+
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Defines what 1rem is
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+}
+
+html,
+body {
+  padding: 0 1rem;
+}
+
+body {
+  box-sizing: border-box;
+  color: #444;
+  font-family: 'Crimson Text', serif;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  max-width: 120rem;
+}
