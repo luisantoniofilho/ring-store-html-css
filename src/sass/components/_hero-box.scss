@@ -4,15 +4,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    & > * {
+      animation: moveInBottom 1s ease-out 0.25s;
+      animation-fill-mode: backwards;
+    }
   }
 
   &__img {
-    width: 50%;
+    width: 40%;
   }
 
   &__btn:link,
   &__btn:visited {
     text-transform: uppercase;
+    z-index: 1;
   }
 
   &__btn:hover,

@@ -1,4 +1,12 @@
 .features {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
   &__icon {
     height: 3rem;
     width: 3rem;
@@ -14,6 +22,6 @@
   &__text {
     font-size: 1.8rem;
     line-height: 1.5;
-    letter-spacing: 1.6;
+    letter-spacing: 1.6px;
   }
 }

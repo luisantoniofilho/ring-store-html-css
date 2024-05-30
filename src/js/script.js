@@ -7,7 +7,7 @@
 const header = document.querySelector('.header');
 const navLinks = document.querySelector('.header__nav-list');
 const mobileNavLinks = document.querySelectorAll('.header__nav-link');
-const openMenuBtn = document.querySelector('.header__btn-mobile-nav');
+const openMenuBtn = document.querySelector('.open-menu-btn');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
 const buyBtn = document.querySelectorAll('.btn-buy');
 
@@ -23,8 +23,16 @@ const dotContainer = document.querySelector('.dots');
 const ctaSection = document.querySelector('.section-cta');
 const form = document.querySelector('.form');
 const modalWindow = document.querySelector('.modal');
-const closeModalBtn = document.querySelector('.btn-close-modal');
+const closeModalBtn = document.querySelector('.modal__btn-close');
 const overlay = document.querySelector('.overlay');
+
+// FOOTER
+const footer = document.querySelector('.footer');
+const footerLinks = document.querySelectorAll('.footer__link');
+
+const currentYear = new Date().getFullYear();
+const copyright = `<p class="copyright">Copyright &copy; ${currentYear} by Luis Antonio</p>`;
+footer.insertAdjacentHTML('beforeend', copyright);
 
 ////////////////////////////////////////////
 // Smooth navigation
@@ -102,7 +110,7 @@ form.addEventListener('submit', function (e) {
 ///////////////////////////////////////
 // Slider
 const slider = function () {
-  let curSlide = 2;
+  let curSlide = 3;
   const maxSlide = slides.length;
 
   // Functions
@@ -165,11 +173,11 @@ const slider = function () {
   };
 
   const init = function () {
-    goToSlide(2);
+    goToSlide(3);
     createDots();
 
-    activateDot(2);
-    increaseSizeCurSlide(2);
+    activateDot(3);
+    increaseSizeCurSlide(3);
   };
   init();
 
@@ -203,4 +211,19 @@ const slider = function () {
 };
 slider();
 
-console.log('h2');
+// FOOTER LINKS
+footer.addEventListener('click', function (e) {
+  if (e.target.classList.contains('footer__link')) {
+    e.preventDefault();
+
+    const href = e.target.getAttribute('href');
+    if (href === '#') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }
+});
+
+console.log('All functions working!');

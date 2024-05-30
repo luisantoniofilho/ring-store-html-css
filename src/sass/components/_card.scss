@@ -1,79 +1,20 @@
+.cards__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
+  justify-content: center;
+  justify-items: center;
+  gap: 6rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #fefefd;
+  background-color: #fff;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.164);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.164);
   transition: all 0.5s;
 
-  &--highlighted {
-    background-image: linear-gradient(
-      to bottom right,
-      #a78e01,
-      #ba9e01,
-      #c1a81a,
-      #c8b134
-    );
-    box-shadow: 5px 5px 5px rgba(193, 168, 26, 0.29);
-  }
-
-  &__img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  &:hover {
-    transform: translateY(-0.5rem);
-  }
-
-  /* Enfasis card */
-  &__heading--highlighted {
-    font-size: 3.6rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3.2rem;
-    color: #f8f5e6;
-  }
-
-  &__icon--highlighted {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: #f8f5e6;
-  }
-
-  &__text--highlighted {
-    font-size: 2rem;
-    line-height: 1.8;
-    color: #f8f5e6;
-  }
-
-  &__price--highlighted {
-    color: #f8f5e6;
-    font-size: 3.2rem;
-    font-weight: bold;
-  }
-
-  &__btn-buy--highlighted {
-    background-color: #fff;
-    color: #ba9e01;
-    border: 1px solid #ba9e01;
-    border-radius: 10px;
-    font-size: 3.2rem;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-
-  &__btn-buy--highlighted:hover,
-  &__btn-buy--highlighted:active {
-    cursor: pointer;
-    background-color: #f1eccc;
-    transition: all 0.3s;
-  }
-
-  /* Normal cards */
   &__box {
     padding: 2.2rem;
     margin-bottom: 1.6rem;
@@ -82,8 +23,8 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 2.2rem;
     list-style: none;
+    gap: 2.2rem;
   }
 
   &__item {
@@ -138,7 +79,80 @@
   &__btn-buy:hover,
   &__btn-buy:active {
     cursor: pointer;
-    background-color: #eee;
+    background-color: $color-grey-light-3;
+    transition: all 0.3s;
+  }
+
+  &__img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.164);
+  }
+
+  /* HIGHLIGHTED CARD */
+  &--highlighted {
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary-dark-1,
+      $color-primary-light-1
+    );
+    box-shadow: 0 10px 10px rgba($color-primary, 0.29);
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 20px rgba($color-primary, 0.29);
+    }
+  }
+
+  &__heading--highlighted,
+  &__icon--highlighted,
+  &__text--highlighted,
+  &__price--highlighted {
+    color: $color-primary-light-3;
+  }
+
+  &__heading--highlighted {
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  &__icon--highlighted {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__text--highlighted {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+
+  &__price--highlighted {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  &__btn-buy--highlighted {
+    background-color: #fff;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 10px;
+    font-size: 3.2rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &__btn-buy--highlighted:hover,
+  &__btn-buy--highlighted:active {
+    cursor: pointer;
+    background-color: $color-primary-light-3;
     transition: all 0.3s;
   }
 }

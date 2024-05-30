@@ -8,3 +8,9 @@ node_modules/
 # Arquivos de configuração do Babel
 .babelrc
 babel.config.js
+
+# Icons
+icons.svg
+
+# VsCode
+.vscode/

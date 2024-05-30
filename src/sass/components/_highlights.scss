@@ -1,0 +1,35 @@
+.highlights {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(53.5rem, 1fr));
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: -4rem;
+    z-index: -1;
+
+    @include respond(bp-large) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 3.6rem;
+    line-height: 1.5;
+  }
+
+  &__ring-img {
+    width: 60%;
+    padding: 0;
+
+    @include respond(bp-large) {
+      &.inverted {
+        grid-row: 4 / 5;
+      }
+    }
+
+    @include respond(bp-large) {
+      width: 40%;
+    }
+  }
+}

@@ -20,12 +20,12 @@
   }
 
   &__btn--left {
-    left: -30vw;
+    left: 2vw;
     transform: translate(-50%, -50%);
   }
 
   &__btn--right {
-    right: -30vw;
+    right: 2vw;
     transform: translate(50%, -50%);
   }
 }
@@ -58,7 +58,7 @@
     transition: all 1s;
   }
 
-  &__ring-img:hover {
+  &__ring-img:hover:not(.current) {
     cursor: pointer;
   }
 }

@@ -25,25 +25,26 @@ border-radius: 10px;
   box-sizing: inherit;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   // Defines what 1rem is
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-}
+  width: 100vw;
 
-html,
-body {
-  padding: 0 1rem;
+  @include respond(bp-medium) {
+    font-size: 50%; //1rem = 8px; 8px/16px = 50%
+  }
+
+  @include respond(bp-small) {
+    font-size: 43.75%; //1rem = 7px; 7px/16px = 43.75%
+  }
 }
 
 body {
   box-sizing: border-box;
-  color: #444;
-  font-family: 'Crimson Text', serif;
-  overflow-x: hidden;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 2rem 2rem;
-  max-width: 120rem;
+  width: 100vw;
 }

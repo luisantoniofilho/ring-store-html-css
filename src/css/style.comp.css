@@ -577,16 +577,10 @@ body {
     justify-content: center;
     list-style: none;
     text-align: center; }
-  .footer__item {
-    transition: 0.2s all; }
-    .footer__item:hover {
-      transform: scale(1.1);
-      color: #ba9e01; }
   .footer__link {
     font-size: 2rem;
     color: #333;
-    text-decoration: none;
-    color: inherit; }
+    text-decoration: none; }
 
 .copyright {
   font-size: 1.2rem; }
