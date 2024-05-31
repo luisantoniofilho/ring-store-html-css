@@ -31,7 +31,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100vw;
       height: 100vh;
 
       gap: 6.4rem;
@@ -57,6 +57,10 @@
     color: #000;
     text-decoration: none;
     transition: all 0.3s;
+
+    @include respond(bp-small) {
+      font-size: 4.2rem;
+    }
   }
 
   &__nav-link:hover,

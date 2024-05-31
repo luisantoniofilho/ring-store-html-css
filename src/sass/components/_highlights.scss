@@ -9,7 +9,12 @@
     z-index: -1;
 
     @include respond(bp-large) {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    @include respond(bp-small) {
+      animation: moveInBottom 1s ease-out 0.25s;
+      animation-fill-mode: backwards;
     }
   }
 

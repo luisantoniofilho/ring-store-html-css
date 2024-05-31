@@ -29,7 +29,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @keyframes moveInFront {
   0% {
     opacity: 0;
-    transform: scale(0); }
+    transform: scale(0) translate(-50%, -50%); }
   100% {
     opacity: 1;
     transform: scale(1); } }
@@ -98,6 +98,10 @@ body {
 .heading-tertiary {
   color: #826f01;
   font-size: 3.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-tertiary {
+      animation: moveInBottom 1s ease-out 0.25s;
+      animation-fill-mode: backwards; } }
 
 .heading-quartenary {
   color: #a78e01;
@@ -387,7 +391,11 @@ body {
   z-index: -1; }
   @media only screen and (max-width: 75em) {
     .highlights__box {
-      margin-top: 1rem; } }
+      margin-top: 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .highlights__box {
+      animation: moveInBottom 1s ease-out 0.25s;
+      animation-fill-mode: backwards; } }
 
 .highlights__text {
   font-size: 3.6rem;
@@ -420,9 +428,11 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  /* Animation needs to be fixed
   animation: moveInFront 0.75s ease-in;
   animation-fill-mode: backwards;
   transform-origin: center;
+  */
   background-color: #fff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.241);
   border-radius: 20px; }
@@ -584,7 +594,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         gap: 6.4rem;
         align-items: center;
@@ -602,6 +612,9 @@ body {
     color: #000;
     text-decoration: none;
     transition: all 0.3s; }
+    @media only screen and (max-width: 37.5em) {
+      .header__nav-link, .header__nav-link:visited {
+        font-size: 4.2rem; } }
   .header__nav-link:hover, .header__nav-link:active {
     border-bottom: 1px solid #000; }
   .header__btn-mobile-nav {

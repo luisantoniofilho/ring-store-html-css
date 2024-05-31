@@ -23,6 +23,11 @@ body {
 .heading-tertiary {
   color: $color-primary-dark-2;
   font-size: 3.2rem;
+
+  @include respond(bp-small) {
+    animation: moveInBottom 1s ease-out 0.25s;
+    animation-fill-mode: backwards;
+  }
 }
 
 .heading-quartenary {

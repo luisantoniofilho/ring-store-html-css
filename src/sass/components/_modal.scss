@@ -10,9 +10,12 @@
   display: grid;
   justify-content: center;
   align-items: center;
+
+  /* Animation needs to be fixed
   animation: moveInFront 0.75s ease-in;
   animation-fill-mode: backwards;
   transform-origin: center;
+  */
 
   background-color: #fff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.241);
