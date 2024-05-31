@@ -31,7 +31,7 @@ const footer = document.querySelector('.footer');
 const footerLinks = document.querySelectorAll('.footer__link');
 
 const currentYear = new Date().getFullYear();
-const copyright = `<p class="copyright">Copyright &copy; ${currentYear} by Luis Antonio</p>`;
+const copyright = `<p class="footer__copyright">Copyright &copy; ${currentYear} by Luis Antonio</p>`;
 footer.insertAdjacentHTML('beforeend', copyright);
 
 ////////////////////////////////////////////

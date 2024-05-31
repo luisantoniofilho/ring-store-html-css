@@ -18,12 +18,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
-  // @if $breakpoint == big-desktop {
-  //   @media only screen and (min-width: 112.5em) {
-  //     // 1800px
-  //     @content;
-  //   }
-  // }
   @if $breakpoint == bp-large {
     @media only screen and (max-width: 75em) {
       // 1200px

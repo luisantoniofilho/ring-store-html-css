@@ -1,8 +1,10 @@
 // COLORS
 $color-primary: #ba9e01;
+
 $color-primary-light-1: #c8b134;
 $color-primary-light-2: #d6c567;
-$color-primary-light-3: #f8f5e6;
+$color-primary-light-3: #eae2b3;
+$color-primary-light-4: #f8f5e6;
 
 $color-primary-dark-1: #a78e01;
 $color-primary-dark-2: #826f01;
@@ -17,4 +19,7 @@ $color-grey-dark-2: #777;
 $color-grey-dark-3: #333;
 
 // BOX-SHADOW
-$primary-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.241);
+$primary-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+// BUTTON BORDER-RADIUS
+$border-radius: 10px;

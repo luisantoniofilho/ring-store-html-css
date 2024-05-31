@@ -84,30 +84,24 @@ body {
 .heading-primary {
   max-width: 80rem;
   color: #a78e01;
-  text-align: center;
   font-size: 6.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4.8rem; } }
 
 .heading-secondary {
   color: #ba9e01;
-  font-size: 6.4rem;
-  text-align: center; }
+  font-size: 6.4rem; }
 
 .heading-tertiary {
   color: #826f01;
   font-size: 3.2rem; }
 
 .heading-quartenary {
-  color: #c1a81a;
-  font-size: 2.4rem;
-  padding-top: 1rem;
-  margin: 0;
-  text-align: left; }
-
-.title {
-  text-align: center;
-  font-size: 6rem;
-  color: #ba9e01; }
+  color: #a78e01;
+  font-size: 2.4rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -131,18 +125,18 @@ body {
   display: inline-block;
   background-color: #ba9e01;
   color: #fff;
-  transition: all 0.5s;
   text-decoration: none;
   font-size: 2.2rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 1.6rem 3.2rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: all 0.5s; }
 
-.cards__box {
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
   justify-content: center;
-  justify-items: center;
+  align-content: center;
   gap: 6rem; }
 
 .card {
@@ -157,6 +151,12 @@ body {
   .card__box {
     padding: 2.2rem;
     margin-bottom: 1.6rem; }
+  .card__heading {
+    color: #000;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.2rem; }
   .card__list {
     display: flex;
     flex-direction: column;
@@ -166,12 +166,6 @@ body {
     display: flex;
     gap: 1rem;
     align-items: center; }
-  .card__heading {
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3.2rem;
-    color: #000; }
   .card__icon {
     height: 2.4rem;
     width: 2.4rem;
@@ -185,64 +179,46 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.2rem 2.2rem 2.2rem; }
-  .card__heading {
+    padding: 2.2rem;
+    color: #000; }
+  .card__price {
     font-size: 3.2rem;
-    font-weight: 600; }
+    font-weight: 600;
+    color: inherit; }
   .card__btn-buy {
     background-color: #fff;
-    color: #111;
+    color: inherit;
     border: 1px solid #111;
     border-radius: 10px;
     font-size: 3.2rem;
     padding: 0.5rem 1.5rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.3s; }
   .card__btn-buy:hover, .card__btn-buy:active {
     cursor: pointer;
-    background-color: #ddd;
-    transition: all 0.3s; }
+    background-color: #ddd; }
   .card__img {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; }
   .card:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.164); }
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.15); }
   .card--highlighted {
     background-image: linear-gradient(to bottom right, #a78e01, #c8b134);
-    box-shadow: 0 10px 10px rgba(186, 158, 1, 0.29); }
+    box-shadow: 0 15px 20px rgba(186, 158, 1, 0.29); }
     .card--highlighted:hover {
-      transform: scale(1.03);
-      box-shadow: 0 15px 20px rgba(186, 158, 1, 0.29); }
+      box-shadow: 0 15px 20px rgba(186, 158, 1, 0.3); }
   .card__heading--highlighted, .card__icon--highlighted, .card__text--highlighted, .card__price--highlighted {
-    color: #f8f5e6; }
-  .card__heading--highlighted {
-    font-size: 3.6rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3.2rem; }
-  .card__icon--highlighted {
-    height: 2.4rem;
-    width: 2.4rem; }
-  .card__text--highlighted {
-    font-size: 2rem;
-    line-height: 1.8; }
-  .card__price--highlighted {
-    font-size: 3.2rem;
-    font-weight: bold; }
+    color: #fff; }
   .card__btn-buy--highlighted {
     background-color: #fff;
     color: #ba9e01;
     border: 1px solid #ba9e01;
     border-radius: 10px;
-    font-size: 3.2rem;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
     transition: all 0.3s; }
   .card__btn-buy--highlighted:hover, .card__btn-buy--highlighted:active {
-    cursor: pointer;
-    background-color: #f8f5e6;
-    transition: all 0.3s; }
+    background-color: #eae2b3; }
 
 .features__box {
   display: grid;
@@ -349,6 +325,21 @@ body {
       @media only screen and (max-width: 56.25em) {
         .form__text-input-box label {
           color: #c8b134; } }
+  .form__cta-btn {
+    font-size: 2rem;
+    padding: 1rem 3.2rem;
+    align-self: flex-end;
+    border: none;
+    text-transform: uppercase; }
+    .form__cta-btn:hover, .form__cta-btn:active {
+      cursor: pointer;
+      background-color: #f8f5e6;
+      color: #ba9e01;
+      /* Inside border */
+      box-shadow: inset 0 0 0 2px #ba9e01; }
+    @media only screen and (max-width: 75em) {
+      .form__cta-btn {
+        font-size: 2.6rem; } }
 
 .cta__ring-img {
   width: 100%;
@@ -361,36 +352,6 @@ body {
       height: auto;
       backdrop-filter: brightness(50%); } }
 
-.btn-subscribe {
-  font-size: 2rem;
-  padding: 1rem 3.2rem;
-  align-self: flex-end;
-  border: none;
-  text-transform: uppercase; }
-  @media only screen and (max-width: 75em) {
-    .btn-subscribe {
-      font-size: 2.6rem; } }
-
-.btn-subscribe:hover,
-.btn-subscribe:active {
-  cursor: pointer;
-  background-color: #f8f5e6;
-  color: #ba9e01;
-  /* Inside border */
-  box-shadow: inset 0 0 0 2px #ba9e01; }
-
-.grid {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  gap: 6.4rem; }
-  .grid--2-cols {
-    grid-template-columns: repeat(2, minmax(min-content, 1fr)); }
-  .grid--3-cols {
-    grid-template-columns: repeat(3, minmax(min-content, 1fr)); }
-  .grid--4-cols {
-    grid-template-columns: repeat(4, minmax(min-content, 1fr)); }
-
 .hero__box {
   display: flex;
   flex-direction: column;
@@ -402,6 +363,9 @@ body {
 
 .hero__img {
   width: 40%; }
+  @media only screen and (max-width: 37.5em) {
+    .hero__img {
+      width: 60%; } }
 
 .hero__btn:link, .hero__btn:visited {
   text-transform: uppercase;
@@ -587,9 +551,8 @@ body {
     color: #333;
     text-decoration: none;
     color: inherit; }
-
-.copyright {
-  font-size: 1.2rem; }
+  .footer__copyright {
+    font-size: 1.2rem; }
 
 .header {
   display: flex;

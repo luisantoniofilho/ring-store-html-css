@@ -1,8 +1,8 @@
-.cards__box {
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
   justify-content: center;
-  justify-items: center;
+  align-content: center;
   gap: 6rem;
 }
 
@@ -20,6 +20,14 @@
     margin-bottom: 1.6rem;
   }
 
+  &__heading {
+    color: #000;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -31,14 +39,6 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-  }
-
-  &__heading {
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3.2rem;
-    color: #000;
   }
 
   &__icon {
@@ -58,29 +58,31 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.2rem 2.2rem 2.2rem;
+    padding: 2.2rem;
+    color: #000;
   }
 
-  &__heading {
+  &__price {
     font-size: 3.2rem;
     font-weight: 600;
+    color: inherit;
   }
 
   &__btn-buy {
     background-color: #fff;
-    color: #111;
+    color: inherit;
     border: 1px solid #111;
-    border-radius: 10px;
+    border-radius: $border-radius;
     font-size: 3.2rem;
     padding: 0.5rem 1.5rem;
     text-decoration: none;
+    transition: all 0.3s;
   }
 
   &__btn-buy:hover,
   &__btn-buy:active {
     cursor: pointer;
     background-color: $color-grey-light-3;
-    transition: all 0.3s;
   }
 
   &__img {
@@ -91,7 +93,7 @@
 
   &:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.164);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.15);
   }
 
   /* HIGHLIGHTED CARD */
@@ -101,11 +103,10 @@
       $color-primary-dark-1,
       $color-primary-light-1
     );
-    box-shadow: 0 10px 10px rgba($color-primary, 0.29);
+    box-shadow: 0 15px 20px rgba($color-primary, 0.29);
 
     &:hover {
-      transform: scale(1.03);
-      box-shadow: 0 15px 20px rgba($color-primary, 0.29);
+      box-shadow: 0 15px 20px rgba($color-primary, 0.3);
     }
   }
 
@@ -113,46 +114,19 @@
   &__icon--highlighted,
   &__text--highlighted,
   &__price--highlighted {
-    color: $color-primary-light-3;
-  }
-
-  &__heading--highlighted {
-    font-size: 3.6rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3.2rem;
-  }
-
-  &__icon--highlighted {
-    height: 2.4rem;
-    width: 2.4rem;
-  }
-
-  &__text--highlighted {
-    font-size: 2rem;
-    line-height: 1.8;
-  }
-
-  &__price--highlighted {
-    font-size: 3.2rem;
-    font-weight: bold;
+    color: #fff;
   }
 
   &__btn-buy--highlighted {
     background-color: #fff;
     color: $color-primary;
     border: 1px solid $color-primary;
-    border-radius: 10px;
-    font-size: 3.2rem;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
+    border-radius: $border-radius;
     transition: all 0.3s;
   }
 
   &__btn-buy--highlighted:hover,
   &__btn-buy--highlighted:active {
-    cursor: pointer;
     background-color: $color-primary-light-3;
-    transition: all 0.3s;
   }
 }
