@@ -32,6 +32,10 @@
     background-position: center;
     height: 100%;
   }
+
+  @include respond(bp-small) {
+    max-width: 50rem;
+  }
 }
 
 .form {
@@ -47,7 +51,7 @@
   }
 
   @include respond(bp-small) {
-    padding: 2rem 3rem 3.2rem 3rem;
+    padding: 2rem 0.5rem 3.2rem 0.5rem;
   }
 
   &__title {
@@ -67,7 +71,7 @@
     }
 
     @include respond(bp-small) {
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 40rem));
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 45rem));
     }
   }
 
