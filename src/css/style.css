@@ -294,6 +294,9 @@ body {
     font-size: 4.8rem;
     color: #826f01;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .form__title {
+        color: #c8b134; } }
   .form__content-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem));

@@ -58,6 +58,10 @@
     font-size: 4.8rem;
     color: $color-primary-dark-2;
     margin-bottom: 2rem;
+
+    @include respond(bp-medium) {
+      color: $color-primary-light-1;
+    }
   }
 
   &__content-box {
