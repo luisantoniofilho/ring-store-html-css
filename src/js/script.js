@@ -103,8 +103,8 @@ closeModalBtn.addEventListener('click', function () {
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  openCloseModal();
   clearForm();
+  openCloseModal();
 });
 
 ///////////////////////////////////////
@@ -175,7 +175,6 @@ const slider = function () {
   const init = function () {
     goToSlide(3);
     createDots();
-
     activateDot(3);
     increaseSizeCurSlide(3);
   };

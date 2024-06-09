@@ -9,8 +9,5 @@ node_modules/
 .babelrc
 babel.config.js
 
-# Icons
-icons.svg
-
 # VsCode
 .vscode/

@@ -1,9 +1,19 @@
+/* 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 /
+64 / 80 / 96 / 128
+*/
+
 .u-center-text {
   text-align: center !important;
 }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
+
+  @include respond(bp-small) {
+    margin-bottom: 0.5rem !important;
+  }
 }
 
 .u-margin-bottom-medium {
@@ -13,10 +23,17 @@
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 
-  //   Example
-  //   @include respond(tab-port) {
-  //     margin-bottom: 5rem !important;
-  //   }
+  @include respond(bp-small) {
+    margin-bottom: 6rem !important;
+  }
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 12rem !important;
+
+  @include respond(bp-small) {
+    margin-bottom: 8rem !important;
+  }
 }
 
 .u-margin-top-big {

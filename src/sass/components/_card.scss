@@ -3,7 +3,11 @@
   grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
   justify-content: center;
   align-content: center;
-  gap: 6rem;
+  gap: 8rem;
+
+  @include respond(bp-small) {
+    gap: 3rem;
+  }
 }
 
 .card {
@@ -12,7 +16,7 @@
   background-color: #fff;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.164);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
 
   &__box {

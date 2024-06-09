@@ -27,7 +27,7 @@
       position: fixed;
       z-index: 999;
       flex-direction: column;
-      background-color: #f8f5e6;
+      background-color: $color-primary-light-4;
       backdrop-filter: blur(10px);
       overflow: hidden;
       top: 0;
@@ -64,17 +64,17 @@
     &:visited {
       color: inherit;
       font-size: 2rem;
-      color: #000;
       text-decoration: none;
       transition: all 0.3s;
 
       &:hover,
       &:active {
-        border-bottom: 1px solid #000;
+        box-shadow: inset 0 -1px 0 0 #000;
+        transform: translateY(-0.5px);
       }
 
       @include respond(bp-small) {
-        font-size: 4.2rem;
+        font-size: 6.4rem;
       }
     }
   }

@@ -4,19 +4,19 @@
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   &__icon {
     height: 3rem;
     width: 3rem;
     color: #ba9e01;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1rem;
   }
 
   &__title {
     font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   &__text {
